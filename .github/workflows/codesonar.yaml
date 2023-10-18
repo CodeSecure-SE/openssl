@@ -22,7 +22,7 @@ jobs:
       API_URL: https://api.github.com
       REQUEST_NUMBER: ${{ github.event.pull_request.number }}
       ROOT_TREE: "OSS-Projects/openssl-GitHub" 
-      PROJECT_NAME: "curl"
+      PROJECT_NAME: "openssl"
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
       CSONAR_HUB_URL: "https://partnerdemo.codesonar.com" 
       CSONAR_HUB_USER: "${{ secrets.CSONAR_HUB_USER }}"
