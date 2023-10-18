@@ -15,7 +15,7 @@
         "command": "${config:codesonar.installDir}${pathSeparator}codesonar${pathSeparator}bin${pathSeparator}codesonar",
         "args": [
           "analyze",
-          "-remote-archive", "\"/saas/*\",",
+          "-remote-archive", "\"/saas/*\"",
           "openssl",
           "-hubuser", "${config:codesonar.hubUser}",
           "-name", "${input:codesonarAnalysisName}",
