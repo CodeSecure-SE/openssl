@@ -4,11 +4,9 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"name": "OpenSSL - CodeSonar ",
 	"image": "canuckmh/openssl-cso-builder:7.4p0",
-        "remoteUser": "user"
-	#"containerUser": "${localEnv:USER}"
-        #"mounts" : [
-	   #"source=${localEnv:HOME}/pem,target=/home/user/pem,type=bind,consistency=cached"
-	#]
+        "mounts" : [
+	   "source=${localEnv:HOME}/.csurf,target=/home/user/.csurf,type=bind"
+	]
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 

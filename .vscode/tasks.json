@@ -18,6 +18,7 @@
           "-remote-archive", "\"/saas/*\"",
           "openssl",
           "-hubuser", "${config:codesonar.hubUser}",
+          "-auth", "certificate",
           "-name", "${input:codesonarAnalysisName}",
           "-conf-file", "codesonar-dev.conf",
           "-project", "OSS-Projects/openssl-GitHub/developers/${config:codesonar.hubUser}",
