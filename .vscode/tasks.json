@@ -14,9 +14,7 @@
         "label": "C/C++: CodeSonar analyze",
         "command": "${config:codesonar.installDir}${pathSeparator}codesonar${pathSeparator}bin${pathSeparator}codesonar",
         "args": [
-          "analyze",
-          "-remote-archive", "\"/saas/*\"",
-          "openssl",
+          "analyze", "~/codesonar-openssl-build",
           "-hubuser", "${config:codesonar.hubUser}",
           "-auth", "certificate",
           "-name", "${input:codesonarAnalysisName}",

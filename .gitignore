@@ -244,3 +244,5 @@ doc-nits
 *.prj
 *.prj_files/**
 openssl*conf
+.vscode/settings.json
+*.sarif
