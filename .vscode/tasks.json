@@ -16,6 +16,7 @@
         "args": [
           "analyze", "~/codesonar-openssl-build",
           "-hubuser", "${config:codesonar.hubUser}",
+          "-foreground",
           "-auth", "certificate",
           "-name", "${input:codesonarAnalysisName}",
           "-conf-file", "codesonar-dev.conf",
