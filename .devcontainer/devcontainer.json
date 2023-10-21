@@ -3,8 +3,10 @@
 {
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"name": "OpenSSL - CodeSonar ",
-	"image": "canuckmh/openssl-cso-builder:7.4p0"
-
+	"image": "canuckmh/openssl-cso-builder:7.4p0",
+        "mounts" : [
+	   "source=${localEnv:HOME}/.csurf,target=/home/user/.csurf,type=bind"
+	]
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
@@ -20,3 +22,4 @@
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
+
