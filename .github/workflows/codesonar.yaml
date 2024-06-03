@@ -10,7 +10,7 @@ on:
 jobs:
   CodeSonar_Analyze:
     permissions: write-all
-    runs-on: self-hosted
+    runs-on: codesecure-runner-set
     container:
       image: canuckmh/openssl-cso-builder:7.4p0
       credentials:
