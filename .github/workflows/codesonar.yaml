@@ -37,7 +37,7 @@ jobs:
           repository: CodeSecure-SE/codesonar_ci
           path: scripts
       - name: Build and Analyze
-        run: python3 scripts/build_and_analyze.py codesonar.conf make -j $PARALLEL
+        run: env; python3 scripts/build_and_analyze.py codesonar.conf make -j $PARALLEL
       - name: Upload SARIF to GitHub #Use this if you do not have GitHub Enterprise
         if: ${{ github.event.pull_request }}
         uses: actions/upload-artifact@v4
